@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/set_accuracy_range"
+            android:id="@+id/accuracy_range" android:layout_alignParentTop="true" android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/minimum"
+            android:id="@+id/min_accuracy_range" android:layout_below="@+id/accuracy_range"
+            android:layout_alignParentStart="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/maximum"
+            android:id="@+id/max_accuracy_range"
+            android:layout_alignTop="@+id/min_accuracy_range" android:layout_centerHorizontal="true"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/edit_min_accuracy_range" android:layout_below="@+id/min_accuracy_range"
+            android:layout_alignParentStart="true" android:layout_alignEnd="@+id/min_accuracy_range"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/edit_max_accuracy_range" android:layout_below="@+id/max_accuracy_range"
+            android:layout_alignStart="@+id/max_accuracy_range" android:layout_alignEnd="@+id/max_accuracy_range"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/set_time_interval_range"
+            android:id="@+id/time_interval_range" android:layout_below="@+id/edit_min_accuracy_range"
+            android:layout_alignParentStart="true" android:layout_marginTop="26dp"
+            android:layout_alignParentEnd="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/minimum"
+            android:id="@+id/min_time_range" android:layout_below="@+id/time_interval_range" android:layout_alignParentStart="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/maximum"
+            android:id="@+id/max_time_range" android:layout_alignTop="@+id/min_time_range"
+            android:layout_alignStart="@+id/edit_max_accuracy_range"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/edit_min_time_range" android:layout_below="@+id/min_time_range"
+            android:layout_alignParentStart="true" android:layout_alignEnd="@+id/min_time_range"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/edit_max_time_range" android:layout_alignTop="@+id/edit_min_time_range"
+            android:layout_alignStart="@+id/max_time_range" android:layout_alignEnd="@+id/max_time_range"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/load_gpx_file"
+            android:id="@+id/load_gpx_file"
+            android:layout_centerVertical="true" android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty"
+            android:id="@+id/loaded_file" android:layout_below="@+id/load_gpx_file"
+            android:layout_alignParentEnd="true" android:layout_alignParentStart="true"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start"
+            android:id="@+id/start_button" android:layout_below="@+id/loaded_file" android:layout_alignParentStart="true"
+            android:layout_marginTop="45dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stop"
+            android:id="@+id/stop_button" android:layout_alignTop="@+id/start_button" android:layout_alignParentEnd="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty"
+            android:id="@+id/location_update_view" android:layout_below="@+id/start_button" android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true" android:layout_alignEnd="@+id/stop_button"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/help"
+            android:id="@+id/help_Button" android:layout_above="@+id/location_update_view"
+            android:layout_centerHorizontal="true"/>
+</RelativeLayout>
