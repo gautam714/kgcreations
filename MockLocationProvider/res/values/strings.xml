@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mock Location Provider</string>
+    <string name="generate_outdoor_data">Outdoor Data</string>
+    <string name="generate_indoor_data">Indoor Data</string>
+    <string name="set_accuracy_range">Set GPS Accuracy Range</string>
+    <string name="set_time_interval_range">Set Time Interval Range</string>
+    <string name="minimum">Minimum</string>
+    <string name="maximum">Maximum</string>
+    <string name="empty"></string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="help">Help</string>
+    <string name="load_gpx_file">Tap to load GPX file</string>
+    <string name="choose_a_file">Choose a gpx file</string>
+    <string name="mock_locations">Generated Mock Locations ...</string>
+    <string name="outdoor_button_press_help">Pressing the Outdoor Data button above will generate data for outdoor behavior which is getting new location once per second.</string>
+    <string name="indoor_button_press_help">Pressing the Indoor Data button above will generate data for indoor behavior which is getting new location once every 5 seconds.</string>
+</resources>
