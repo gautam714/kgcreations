@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <string name="app_name">Tic Tac Toe</string>
-    <string name="action_settings">Settings</string>
-    <string name="AuthorName">Tic Tac Toe by Kumar Gautam</string>
-    <string name="NewGame">New Game</string>
-
-</resources>
